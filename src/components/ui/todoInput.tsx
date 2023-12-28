@@ -16,15 +16,10 @@ const TodoInput = ({todo, setTodo, addTodo}: TodoInputProps) => {
         onChange={(e) => setTodo(e.target.value)}
       />
       <button 
-      className="absolute right-1 top-1"
+      className="absolute text-xl font-bold right-4 top-2"
       onClick={(e)=>addTodo(e)}
       >
-        <img
-          src="src/assets/img/input.png"
-          alt=""
-          width={30}
-          className=" opacity-30"
-        />
+        OK
       </button>
     </form>
   );

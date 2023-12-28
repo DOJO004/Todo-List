@@ -14,13 +14,12 @@ const TodoItem = ({ todoList, checkedTodo, finish,deleteTodo }: todoItemProps) =
           key={items}>
           <input type='checkbox' onClick={() => checkedTodo(items)} />
           <p className='mx-2'>{items}</p>
-          <img
-            src="/src/assets/img/bin.png"
-            alt="bin"
-            width={20}
-            className="absolute cursor-pointer right-5"
-            onClick={()=>deleteTodo(items)}
-            />
+         <button
+          className="absolute text-xl font-bold right-5"
+          onClick={()=>deleteTodo(items)}
+         >
+          X
+         </button>
         </div>
       ))}
     </>
