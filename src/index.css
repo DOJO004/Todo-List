@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 *{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     @apply p-0 m-0 box-border
 }
 
